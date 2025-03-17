@@ -3,110 +3,107 @@ import json
 from tabulate import tabulate
 
 
+def run_powershell(cmd):
+    """Runs a PowerShell command safely with a timeout."""
+    try:
+        result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True, timeout=10)
+        return result.stdout.strip()
+    except subprocess.TimeoutExpired:
+        print(f"ERROR: Command timed out: {cmd}")
+        return ""
+    except Exception as e:
+        print(f"ERROR: {str(e)}")
+        return ""
+
+
 def list_user_accounts():
-    """Lists all local user accounts on the system."""
+    """Lists all local user accounts."""
     print("[+] Listing all user accounts...")
     cmd = "Get-LocalUser | Select-Object Name, Enabled, LastLogon | ConvertTo-Json"
-    result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True)
+    output = run_powershell(cmd)
+
     try:
-        users = json.loads(result.stdout)
-        return users if isinstance(users, list) else [users]  # Handle single user case
+        users = json.loads(output) if output else []
+        return users if isinstance(users, list) else [users]
     except json.JSONDecodeError:
+        print("ERROR: Failed to parse user list.")
         return []
 
 
 def check_password_policy():
-    """Checks Windows password policies, including expiry and complexity rules."""
+    """Checks Windows password policies."""
     print("[+] Checking password policies...")
-    cmd = "net accounts"
-    result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
-    return result.stdout.strip()
+    return run_powershell("net accounts")
 
 
 def list_admin_users():
-    """Lists users with administrative privileges."""
-    print("[+] Listing users with administrator privileges...")
+    """Lists users with admin privileges."""
+    print("[+] Listing administrator users...")
     cmd = "Get-LocalGroupMember -Group Administrators | Select-Object Name | ConvertTo-Json"
-    result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True)
+    output = run_powershell(cmd)
+
     try:
-        admins = json.loads(result.stdout)
+        admins = json.loads(output) if output else []
         return admins if isinstance(admins, list) else [admins]
     except json.JSONDecodeError:
+        print("ERROR: Failed to parse admin users.")
         return []
 
 
 def check_password_strength():
-    """Analyzes user password strengths based on expiry, complexity, and missing passwords."""
+    """Checks for weak and expired passwords."""
     print("[+] Checking user password strength...")
 
     weak_passwords = []
     expired_passwords = []
 
     cmd = """
-    Get-WmiObject Win32_UserAccount | Select-Object Name, PasswordRequired, Disabled, Lockout, PasswordExpires | ConvertTo-Json
+    Get-WmiObject Win32_UserAccount | Select-Object Name, PasswordRequired, PasswordExpires | ConvertTo-Json
     """
-    result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True)
+    output = run_powershell(cmd)
 
     try:
-        users = json.loads(result.stdout)
+        users = json.loads(output) if output else []
         if not isinstance(users, list):
-            users = [users]  # Handle single user case
+            users = [users]
 
         for user in users:
             name = user.get("Name", "Unknown")
-            password_required = user.get("PasswordRequired", True)  # Default to True if missing
+            password_required = user.get("PasswordRequired", True)
             password_expires = user.get("PasswordExpires", False)
-            disabled = user.get("Disabled", False)
 
-            # Weak password: Account does not require a password
             if not password_required:
                 weak_passwords.append(name)
-
-            # Expired password: If expiration is disabled and the account is enabled
-            if not password_expires and not disabled:
+            if not password_expires:
                 expired_passwords.append(name)
 
     except json.JSONDecodeError:
-        pass
+        print("ERROR: Failed to parse password info.")
 
     return weak_passwords, expired_passwords
 
 
 def get_account_creation_dates():
-    """Fetches the creation date of each user account."""
+    """Fetches account creation history (Event ID 4720)."""
     print("[+] Fetching account creation history...")
+
     cmd = """
-    Get-WmiObject Win32_UserAccount | Select-Object Name, SID | ConvertTo-Json
+    Get-WinEvent -LogName Security -FilterXPath "*[System[(EventID=4720)]]" |
+    Select-Object TimeCreated, @{Name='UserName';Expression={$_.Properties[0].Value}} | ConvertTo-Json
     """
-    result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True)
+    output = run_powershell(cmd)
 
     creation_history = []
-    
     try:
-        users = json.loads(result.stdout)
-        if not isinstance(users, list):
-            users = [users]  # Handle single user case
+        events = json.loads(output) if output else []
+        if isinstance(events, dict):
+            events = [events]
 
-        for user in users:
-            name = user.get("Name", "Unknown")
-            sid = user.get("SID", "")
-
-            if sid:
-                # Extract the last part of the SID, which usually contains the relative identifier (RID)
-                rid = sid.split("-")[-1]
-                
-                # Get the creation time of the user based on the RID
-                cmd = f"wmic useraccount where SID='{sid}' get Name, WhenCreated /format:csv"
-                creation_result = subprocess.run(["powershell", "-Command", cmd], capture_output=True, text=True)
-                
-                # Extract creation time from the output
-                lines = creation_result.stdout.strip().split("\n")
-                if len(lines) > 1:
-                    creation_time = lines[1].split(",")[-1]  # Extract the last column
-                    creation_history.append([name, creation_time])
+        for event in events:
+            creation_history.append([event.get("UserName", "Unknown"), event.get("TimeCreated", "Unknown")])
 
     except json.JSONDecodeError:
-        pass
+        print("ERROR: Failed to parse creation history.")
 
     return creation_history
 
@@ -146,6 +143,6 @@ def run_audit():
     if creation_history:
         print(tabulate(creation_history, headers=["User Name", "Creation Date"], tablefmt="grid"))
     else:
-        print("No creation history available.")
+        print("No account creation history available.")
 
     print("\n===== AUDIT COMPLETE =====\n")
