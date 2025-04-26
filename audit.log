@@ -1,1007 +1,10 @@
-2025-04-26 14:45:19,509 - INFO - Fetching system information...
-2025-04-26 14:45:24,972 - INFO - 
-Host Name:                 NAQEEB
-OS Name:                   Microsoft Windows 10 Pro
-OS Version:                10.0.19045 N/A Build 19045
-OS Manufacturer:           Microsoft Corporation
-OS Configuration:          Standalone Workstation
-OS Build Type:             Multiprocessor Free
-Registered Owner:          Danish Trader
-Registered Organization:   
-Product ID:                00331-10000-00001-AA603
-Original Install Date:     7/5/2023, 2:34:51 PM
-System Boot Time:          4/15/2025, 8:29:16 PM
-System Manufacturer:       LENOVO
-System Model:              20BFS0N200
-System Type:               x64-based PC
-Processor(s):              1 Processor(s) Installed.
-                           [01]: Intel64 Family 6 Model 60 Stepping 3 GenuineIntel ~798 Mhz
-BIOS Version:              LENOVO GMET66WW (2.14 ), 7/1/2014
-Windows Directory:         C:\WINDOWS
-System Directory:          C:\WINDOWS\system32
-Boot Device:               \Device\HarddiskVolume1
-System Locale:             en-us;English (United States)
-Input Locale:              en-us;English (United States)
-Time Zone:                 (UTC+05:00) Islamabad, Karachi
-Total Physical Memory:     7,877 MB
-Available Physical Memory: 1,991 MB
-Virtual Memory: Max Size:  12,229 MB
-Virtual Memory: Available: 4,537 MB
-Virtual Memory: In Use:    7,692 MB
-Page File Location(s):     C:\pagefile.sys
-Domain:                    WORKGROUP
-Logon Server:              \\NAQEEB
-Hotfix(s):                 27 Hotfix(s) Installed.
-                           [01]: KB5054978
-                           [02]: KB5056578
-                           [03]: KB5028951
-                           [04]: KB5011048
-                           [05]: KB5015684
-                           [06]: KB5055518
-                           [07]: KB5026879
-                           [08]: KB5028318
-                           [09]: KB5028380
-                           [10]: KB5029709
-                           [11]: KB5031539
-                           [12]: KB5032392
-                           [13]: KB5032907
-                           [14]: KB5034224
-                           [15]: KB5036447
-                           [16]: KB5037018
-                           [17]: KB5037240
-                           [18]: KB5037995
-                           [19]: KB5039336
-                           [20]: KB5041579
-                           [21]: KB5043935
-                           [22]: KB5043130
-                           [23]: KB5046823
-                           [24]: KB5050388
-                           [25]: KB5050111
-                           [26]: KB5052916
-                           [27]: KB5054682
-Network Card(s):           4 NIC(s) Installed.
-                           [01]: Intel(R) Ethernet Connection I217-LM
-                                 Connection Name: Ethernet
-                                 Status:          Media disconnected
-                           [02]: Intel(R) Dual Band Wireless-AC 7260
-                                 Connection Name: Wi-Fi
-                                 DHCP Enabled:    Yes
-                                 DHCP Server:     192.168.3.1
-                                 IP address(es)
-                                 [01]: 192.168.3.104
-                                 [02]: fe80::36c3:1bd:57a6:e7ce
-                           [03]: Bluetooth Device (Personal Area Network)
-                                 Connection Name: Bluetooth Network Connection
-                                 Status:          Media disconnected
-                           [04]: VirtualBox Host-Only Ethernet Adapter
-                                 Connection Name: Ethernet 2
-                                 DHCP Enabled:    No
-                                 IP address(es)
-                                 [01]: 192.168.165.1
-                                 [02]: fe80::b44b:c11d:5894:d482
-Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
-
-2025-04-26 14:45:24,972 - INFO - Checking Windows Firewall status...
-2025-04-26 14:45:26,239 - INFO - 
-Domain Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Enable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-
-Private Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Enable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-
-Public Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Enable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-Ok.
-
-
-2025-04-26 14:45:26,240 - INFO - Checking installed antivirus...
-2025-04-26 14:45:26,540 - INFO - 
-2025-04-26 14:45:26,540 - INFO - Checking installed patches...
-2025-04-26 14:45:28,564 - INFO - HotFixID   
-
-KB5054978  
-
-KB5056578  
-
-KB5028951  
-
-KB5011048  
-
-KB5015684  
-
-KB5055518  
-
-KB5026879  
-
-KB5028318  
-
-KB5028380  
-
-KB5029709  
-
-KB5031539  
-
-KB5032392  
-
-KB5032907  
-
-KB5034224  
-
-KB5036447  
-
-KB5037018  
-
-KB5037240  
-
-KB5037995  
-
-KB5039336  
-
-KB5041579  
-
-KB5043935  
-
-KB5043130  
-
-KB5046823  
-
-KB5050388  
-
-KB5050111  
-
-KB5052916  
-
-KB5054682  
-
-
-
-
-2025-04-26 14:45:28,564 - INFO - Checking startup applications...
-2025-04-26 14:45:29,018 - INFO - Caption                                                   Command                                                                                                 
-
-OneDrive                                                  "C:\Users\Danish Trader\AppData\Local\Microsoft\OneDrive\OneDrive.exe" /background                      
-
-MicrosoftEdgeAutoLaunch_613C03DE92963CDD015F3D36714CA47A  "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --no-startup-window --win-session-start  
-
-SecurityHealth                                            %windir%\system32\SecurityHealthSystray.exe                                                             
-
-
-
-
-2025-04-26 14:45:29,018 - INFO - Auditing running services...
-2025-04-26 14:45:29,904 - INFO - Name                                        State    
-
-AJRouter                                    Stopped  
-
-ALG                                         Stopped  
-
-AppIDSvc                                    Stopped  
-
-Appinfo                                     Running  
-
-AppMgmt                                     Running  
-
-AppReadiness                                Stopped  
-
-AppVClient                                  Stopped  
-
-AppXSvc                                     Running  
-
-AssignedAccessManagerSvc                    Stopped  
-
-AudioEndpointBuilder                        Running  
-
-Audiosrv                                    Running  
-
-autotimesvc                                 Stopped  
-
-AxInstSV                                    Stopped  
-
-BDESVC                                      Stopped  
-
-BFE                                         Running  
-
-BITS                                        Stopped  
-
-BrokerInfrastructure                        Running  
-
-BTAGService                                 Running  
-
-BthAvctpSvc                                 Running  
-
-bthserv                                     Running  
-
-camsvc                                      Running  
-
-CDPSvc                                      Running  
-
-CertPropSvc                                 Running  
-
-ClickToRunSvc                               Running  
-
-ClipSVC                                     Running  
-
-cloudidsvc                                  Stopped  
-
-COMSysApp                                   Stopped  
-
-CoreMessagingRegistrar                      Running  
-
-cphs                                        Stopped  
-
-CryptSvc                                    Running  
-
-CscService                                  Stopped  
-
-DcomLaunch                                  Running  
-
-dcsvc                                       Stopped  
-
-defragsvc                                   Stopped  
-
-DeviceAssociationService                    Running  
-
-DeviceInstall                               Stopped  
-
-DevQueryBroker                              Running  
-
-Dhcp                                        Running  
-
-diagnosticshub.standardcollector.service    Stopped  
-
-diagsvc                                     Stopped  
-
-DiagTrack                                   Running  
-
-DialogBlockingService                       Stopped  
-
-DispBrokerDesktopSvc                        Running  
-
-DisplayEnhancementService                   Running  
-
-DmEnrollmentSvc                             Stopped  
-
-dmwappushservice                            Stopped  
-
-Dnscache                                    Running  
-
-DoSvc                                       Running  
-
-dot3svc                                     Stopped  
-
-DPS                                         Running  
-
-DsmSvc                                      Stopped  
-
-DsSvc                                       Running  
-
-DusmSvc                                     Running  
-
-Eaphost                                     Stopped  
-
-edgeupdate                                  Stopped  
-
-edgeupdatem                                 Stopped  
-
-EFS                                         Stopped  
-
-embeddedmode                                Stopped  
-
-EntAppSvc                                   Stopped  
-
-EventLog                                    Running  
-
-EventSystem                                 Running  
-
-Fax                                         Stopped  
-
-fdPHost                                     Stopped  
-
-FDResPub                                    Running  
-
-fhsvc                                       Stopped  
-
-FontCache                                   Running  
-
-FontCache3.0.0.0                            Running  
-
-FrameServer                                 Stopped  
-
-GameInputSvc                                Stopped  
-
-GoogleChromeElevationService                Stopped  
-
-gpsvc                                       Running  
-
-GraphicsPerfSvc                             Stopped  
-
-hidserv                                     Stopped  
-
-hns                                         Running  
-
-HvHost                                      Running  
-
-IBMPMSVC                                    Running  
-
-icssvc                                      Stopped  
-
-igfxCUIService2.0.0.0                       Running  
-
-IKEEXT                                      Stopped  
-
-InstallService                              Running  
-
-iphlpsvc                                    Running  
-
-IpxlatCfgSvc                                Stopped  
-
-KeyIso                                      Running  
-
-KtmRm                                       Stopped  
-
-LanmanServer                                Running  
-
-LanmanWorkstation                           Running  
-
-lfsvc                                       Running  
-
-LicenseManager                              Running  
-
-lltdsvc                                     Stopped  
-
-lmhosts                                     Running  
-
-LSM                                         Running  
-
-LxpSvc                                      Stopped  
-
-LxssManager                                 Stopped  
-
-MapsBroker                                  Stopped  
-
-McpManagementService                        Stopped  
-
-MDCoreSvc                                   Running  
-
-MicrosoftEdgeElevationService               Stopped  
-
-MixedRealityOpenXRSvc                       Stopped  
-
-mpssvc                                      Running  
-
-MSDTC                                       Stopped  
-
-MSiSCSI                                     Stopped  
-
-msiserver                                   Stopped  
-
-MsKeyboardFilter                            Stopped  
-
-NaturalAuthentication                       Stopped  
-
-NcaSvc                                      Stopped  
-
-NcbService                                  Running  
-
-NcdAutoSetup                                Running  
-
-Netlogon                                    Stopped  
-
-Netman                                      Stopped  
-
-netprofm                                    Running  
-
-NetSetupSvc                                 Stopped  
-
-NetTcpPortSharing                           Stopped  
-
-NgcCtnrSvc                                  Stopped  
-
-NgcSvc                                      Stopped  
-
-NlaSvc                                      Running  
-
-nsi                                         Running  
-
-nvagent                                     Running  
-
-ose64                                       Stopped  
-
-p2pimsvc                                    Stopped  
-
-p2psvc                                      Stopped  
-
-PcaSvc                                      Running  
-
-PeerDistSvc                                 Stopped  
-
-perceptionsimulation                        Stopped  
-
-PerfHost                                    Stopped  
-
-PhoneSvc                                    Stopped  
-
-pla                                         Stopped  
-
-PlugPlay                                    Running  
-
-PNRPAutoReg                                 Stopped  
-
-PNRPsvc                                     Stopped  
-
-PolicyAgent                                 Stopped  
-
-Power                                       Running  
-
-PrintNotify                                 Stopped  
-
-ProfSvc                                     Running  
-
-PushToInstall                               Stopped  
-
-QWAVE                                       Running  
-
-RasAuto                                     Stopped  
-
-RasMan                                      Running  
-
-RemoteAccess                                Stopped  
-
-RemoteRegistry                              Stopped  
-
-RetailDemo                                  Stopped  
-
-RmSvc                                       Running  
-
-RpcEptMapper                                Running  
-
-RpcLocator                                  Stopped  
-
-RpcSs                                       Running  
-
-RtkAudioService                             Running  
-
-SamSs                                       Running  
-
-SCardSvr                                    Running  
-
-ScDeviceEnum                                Stopped  
-
-Schedule                                    Running  
-
-SCPolicySvc                                 Stopped  
-
-SDRSVC                                      Stopped  
-
-seclogon                                    Stopped  
-
-SecurityHealthService                       Running  
-
-SEMgrSvc                                    Running  
-
-SENS                                        Running  
-
-Sense                                       Stopped  
-
-SensorDataService                           Stopped  
-
-SensorService                               Stopped  
-
-SensrSvc                                    Stopped  
-
-SessionEnv                                  Stopped  
-
-SgrmBroker                                  Stopped  
-
-SharedAccess                                Running  
-
-SharedRealitySvc                            Stopped  
-
-ShellHWDetection                            Running  
-
-shpamsvc                                    Stopped  
-
-smphost                                     Stopped  
-
-SmsRouter                                   Stopped  
-
-SNMPTRAP                                    Stopped  
-
-spectrum                                    Stopped  
-
-Spooler                                     Running  
-
-sppsvc                                      Stopped  
-
-SSDPSRV                                     Running  
-
-ssh-agent                                   Stopped  
-
-SstpSvc                                     Running  
-
-StateRepository                             Running  
-
-stisvc                                      Stopped  
-
-StorSvc                                     Running  
-
-svsvc                                       Stopped  
-
-swprv                                       Running  
-
-SysMain                                     Running  
-
-SystemEventsBroker                          Running  
-
-TabletInputService                          Running  
-
-TapiSrv                                     Stopped  
-
-TermService                                 Stopped  
-
-Themes                                      Running  
-
-TieringEngineService                        Stopped  
-
-TimeBrokerSvc                               Running  
-
-TokenBroker                                 Running  
-
-TrkWks                                      Running  
-
-TroubleshootingSvc                          Stopped  
-
-TrustedInstaller                            Running  
-
-tzautoupdate                                Stopped  
-
-UevAgentService                             Stopped  
-
-uhssvc                                      Stopped  
-
-UmRdpService                                Stopped  
-
-upnphost                                    Stopped  
-
-UserManager                                 Running  
-
-UsoSvc                                      Running  
-
-VacSvc                                      Stopped  
-
-VaultSvc                                    Running  
-
-VBoxSDS                                     Stopped  
-
-vds                                         Stopped  
-
-vmcompute                                   Stopped  
-
-vmicguestinterface                          Stopped  
-
-vmicheartbeat                               Stopped  
-
-vmickvpexchange                             Stopped  
-
-vmicrdv                                     Stopped  
-
-vmicshutdown                                Stopped  
-
-vmictimesync                                Stopped  
-
-vmicvmsession                               Stopped  
-
-vmicvss                                     Stopped  
-
-VSS                                         Stopped  
-
-W32Time                                     Running  
-
-WaaSMedicSvc                                Running  
-
-WalletService                               Stopped  
-
-WarpJITSvc                                  Stopped  
-
-wbengine                                    Stopped  
-
-WbioSrvc                                    Running  
-
-Wcmsvc                                      Running  
-
-wcncsvc                                     Running  
-
-WdiServiceHost                              Running  
-
-WdiSystemHost                               Running  
-
-WdNisSvc                                    Running  
-
-WebClient                                   Running  
-
-Wecsvc                                      Stopped  
-
-WEPHOSTSVC                                  Stopped  
-
-wercplsupport                               Stopped  
-
-WerSvc                                      Stopped  
-
-WFDSConMgrSvc                               Stopped  
-
-WiaRpc                                      Stopped  
-
-WinDefend                                   Running  
-
-WinHttpAutoProxySvc                         Running  
-
-Winmgmt                                     Running  
-
-WinRM                                       Stopped  
-
-wisvc                                       Stopped  
-
-WlanSvc                                     Running  
-
-wlidsvc                                     Running  
-
-wlpasvc                                     Stopped  
-
-WManSvc                                     Stopped  
-
-wmiApSrv                                    Stopped  
-
-WMPNetworkSvc                               Stopped  
-
-workfolderssvc                              Stopped  
-
-WpcMonSvc                                   Stopped  
-
-WPDBusEnum                                  Stopped  
-
-WpnService                                  Running  
-
-wscsvc                                      Running  
-
-WSearch                                     Running  
-
-WslInstaller                                Stopped  
-
-WSLService                                  Running  
-
-wuauserv                                    Stopped  
-
-WwanSvc                                     Stopped  
-
-XblAuthManager                              Stopped  
-
-XblGameSave                                 Stopped  
-
-XboxGipSvc                                  Stopped  
-
-XboxNetApiSvc                               Stopped  
-
-GoogleUpdaterInternalService137.0.7129.0    Stopped  
-
-GoogleUpdaterService137.0.7129.0            Stopped  
-
-AarSvc_9ff5b48                              Stopped  
-
-BcastDVRUserService_9ff5b48                 Stopped  
-
-BluetoothUserService_9ff5b48                Stopped  
-
-CaptureService_9ff5b48                      Stopped  
-
-cbdhsvc_9ff5b48                             Running  
-
-CDPUserSvc_9ff5b48                          Running  
-
-ConsentUxUserSvc_9ff5b48                    Stopped  
-
-CredentialEnrollmentManagerUserSvc_9ff5b48  Stopped  
-
-DeviceAssociationBrokerSvc_9ff5b48          Stopped  
-
-DevicePickerUserSvc_9ff5b48                 Stopped  
-
-DevicesFlowUserSvc_9ff5b48                  Stopped  
-
-LxssManagerUser_9ff5b48                     Stopped  
-
-MessagingService_9ff5b48                    Stopped  
-
-OneSyncSvc_9ff5b48                          Running  
-
-PimIndexMaintenanceSvc_9ff5b48              Running  
-
-PrintWorkflowUserSvc_9ff5b48                Stopped  
-
-UdkUserSvc_9ff5b48                          Stopped  
-
-UnistoreSvc_9ff5b48                         Running  
-
-UserDataSvc_9ff5b48                         Running  
-
-WpnUserService_9ff5b48                      Running  
-
-
-
-
-2025-04-26 14:45:29,905 - INFO - Listing installed applications...
-2025-04-26 14:46:28,399 - INFO - Name                                                                    
-
-Microsoft Teams Meeting Add-in for Microsoft Office                     
-
-Office 16 Click-to-Run Extensibility Component                          
-
-Office 16 Click-to-Run Localization Component                           
-
-Office 16 Click-to-Run Licensing Component                              
-
-MySQL Workbench 8.0 CE                                                  
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.50727.4053 False    
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 False    
-
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40660 False        
-
-Node.js                                                                 
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022 False         
-
-Microsoft Visual C++ 2010 Redistributable - x64 10.0.40219              
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.61000               
-
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40664              
-
-Microsoft Visual C++ 2010 Redistributable - x86 10.0.40219              
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022.0 False       
-
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 False        
-
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005 False     
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022.0 False       
-
-Microsoft Visual C++ 2022 X64 Additional Runtime - 14.36.32532          
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022.218 False     
-
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.50727 False        
-
-Microsoft Update Health Tools                                           
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4048 False    
-
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.50727 False     
-
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.60610 False        
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.59193 False         
-
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40649 False        
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.57103 False         
-
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.60610 False        
-
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664              
-
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40660 False     
-
-Microsoft Visual C++ 2019 X86 Additional Runtime - 14.29.30139          
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.57102 False         
-
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40649 False        
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.51011 False         
-
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.51106 False     
-
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40649 False     
-
-Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30139             
-
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.60610 False     
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.0 False       
-
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005 False     
-
-Intel(R) C++ Redistributables on Intel(R) 64                            
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161          
-
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.51106 False     
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.5570 False    
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161          
-
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 False        
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022 False         
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.58298 False         
-
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030           
-
-Windows PC Health Check                                                 
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.56336 False         
-
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40660 False     
-
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.60610 False     
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729 False         
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30411 False         
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.50727.42 False      
-
-Update for x64-based Windows Systems (KB5001716)                        
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4048 False    
-
-                                                                        
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.59192 False         
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.5570 False    
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.58299 False         
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148.0 False  
-
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664           
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.56336 False         
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729 False         
-
-Microsoft Visual C++ 2005 Redistributable - x64 8.0.50727.4053 False    
-
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.50727 False     
-
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.50727 False        
-
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030           
-
-Microsoft Visual C++ 2010 Redistributable - x64 10.0.30319 False        
-
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.51106 False        
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.61001               
-
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030              
-
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40660 False        
-
-Windows SDK AddOn                                                       
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148 False    
-
-Microsoft Visual C++ 2010 Redistributable - x86 10.0.30319 False        
-
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40664           
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17 False      
-
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40649 False     
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30411 False         
-
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030              
-
-Windows Subsystem for Linux                                             
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148.0 False  
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.51011 False         
-
-Java(TM) SE Development Kit 21.0.1 (64-bit)                             
-
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17 False      
-
-Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.36.32532             
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.0 False       
-
-Dolby Digital Plus Advanced Audio                                       
-
-Oracle VM VirtualBox 6.1.42                                             
-
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.51106 False        
-
-Microsoft Visual C++ 2005 Redistributable - x86 8.0.50727.42 False      
-
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022.218 False     
-
-
-
-
-2025-04-26 14:46:28,400 - INFO - Checking scheduled tasks...
-2025-04-26 14:46:30,482 - INFO - 
+2025-04-26 15:09:09,668 - INFO - Checking scheduled tasks...
+2025-04-26 15:09:10,229 - INFO - 
 Folder: \
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-CreateExplorerShellUnelevatedTask        N/A                    Ready          
-DolbySelectorTask                        N/A                    Ready          
-OneDrive Reporting Task-S-1-5-21-3521954 4/27/2025 9:13:26 AM   Ready          
-OneDrive Standalone Update Task-S-1-5-21 4/27/2025 10:10:27 AM  Ready          
-OneDrive Startup Task-S-1-5-21-352195471 N/A                    Ready          
-Opera scheduled Autoupdate 1703947503    4/26/2025 7:45:07 PM   Ready          
-RtHDVBg_Dolby                            N/A                    Running        
-RTKCPL                                   N/A                    Ready          
-User_Feed_Synchronization-{E6EF11F9-DB72 4/26/2025 5:59:18 PM   Ready          
-
-Folder: \Agent Activation Runtime
-TaskName                                 Next Run Time          Status         
-======================================== ====================== ===============
-S-1-5-21-3521954715-929620231-1276453852 N/A                    Disabled       
-
-Folder: \GoogleSystem
-TaskName                                 Next Run Time          Status         
-======================================== ====================== ===============
-INFO: There are no scheduled tasks presently available at your access level.
-
-Folder: \Lenovo
-TaskName                                 Next Run Time          Status         
-======================================== ====================== ===============
-INFO: There are no scheduled tasks presently available at your access level.
-
-Folder: \Lenovo\Power Manager
-TaskName                                 Next Run Time          Status         
-======================================== ====================== ===============
-Background monitor                       N/A                    Running        
+RtHDVBg_PushButton                       N/A                    Running        
+ZoomUpdateTaskUser-S-1-5-21-532799294-14 26/04/2025 5:25:00 pm  Ready          
 
 Folder: \Microsoft
 TaskName                                 Next Run Time          Status         
@@ -1011,20 +14,24 @@ INFO: There are no scheduled tasks presently available at your access level.
 Folder: \Microsoft\Office
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Office Apps Prewarm                      N/A                    Disabled       
-Office Apps Prewarm Recurring            N/A                    Disabled       
-Office Automatic Updates 2.0             4/27/2025 10:57:12 AM  Ready          
-Office Background Push Maintenance       4/27/2025 3:47:19 AM   Ready          
-Office ClickToRun Service Monitor        4/27/2025 4:56:30 AM   Ready          
-Office Feature Updates                   4/26/2025 8:58:39 PM   Ready          
-Office Feature Updates Logon             N/A                    Ready          
-Office Performance Monitor               N/A                    Ready          
-Office Serviceability Manager            4/26/2025 3:22:47 PM   Ready          
+Office 15 Subscription Heartbeat         27/04/2025 1:02:46 am  Ready          
+OfficeTelemetryAgentFallBack             N/A                    Ready          
+OfficeTelemetryAgentLogOn                N/A                    Ready          
 
 Folder: \Microsoft\OneCore
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\VisualStudio
+TaskName                                 Next Run Time          Status         
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\VisualStudio\Updates
+TaskName                                 Next Run Time          Status         
+======================================== ====================== ===============
+BackgroundDownload                       N/A                    Ready          
 
 Folder: \Microsoft\Windows
 TaskName                                 Next Run Time          Status         
@@ -1055,9 +62,9 @@ Folder: \Microsoft\Windows\Application Experience
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 MareBackup                               N/A                    Ready          
-Microsoft Compatibility Appraiser        4/27/2025 3:42:44 AM   Ready          
-PcaPatchDbTask                           4/26/2025 3:10:12 PM   Ready          
-PcaWallpaperAppDetect                    4/28/2025 12:00:26 PM  Ready          
+Microsoft Compatibility Appraiser        27/04/2025 3:52:02 am  Ready          
+PcaPatchDbTask                           27/04/2025 4:37:50 am  Ready          
+PcaWallpaperAppDetect                    28/04/2025 12:00:41 pm Ready          
 ProgramDataUpdater                       N/A                    Ready          
 StartupAppTask                           N/A                    Ready          
 
@@ -1073,7 +80,7 @@ Folder: \Microsoft\Windows\AppListBackup
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 Backup                                   N/A                    Ready          
-BackupNonMaintenance                     4/27/2025 3:09:43 AM   Ready          
+BackupNonMaintenance                     27/04/2025 2:45:30 am  Ready          
 
 Folder: \Microsoft\Windows\AppxDeploymentClient
 TaskName                                 Next Run Time          Status         
@@ -1121,7 +128,7 @@ CreateObjectTask                         N/A                    Ready
 Folder: \Microsoft\Windows\CloudRestore
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Backup                                   5/4/2025 10:17:50 AM   Ready          
+Backup                                   03/05/2025 5:15:37 pm  Ready          
 
 Folder: \Microsoft\Windows\ConsentUX
 TaskName                                 Next Run Time          Status         
@@ -1131,18 +138,18 @@ INFO: There are no scheduled tasks presently available at your access level.
 Folder: \Microsoft\Windows\ConsentUX\UnifiedConsent
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-UnifiedConsentSyncTask                   4/29/2025 1:17:13 PM   Ready          
+UnifiedConsentSyncTask                   29/04/2025 12:22:28 pm Ready          
 
 Folder: \Microsoft\Windows\Customer Experience Improvement Program
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Consolidator                             4/26/2025 6:00:00 PM   Ready          
+Consolidator                             26/04/2025 6:00:00 pm  Ready          
 UsbCeip                                  N/A                    Ready          
 
 Folder: \Microsoft\Windows\Data Integrity Scan
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Data Integrity Check And Scan            4/26/2025 11:58:28 PM  Ready          
+Data Integrity Check And Scan            26/04/2025 11:33:09 pm Ready          
 Data Integrity Scan                      N/A                    Ready          
 Data Integrity Scan for Crash Recovery   N/A                    Ready          
 
@@ -1154,7 +161,7 @@ ScheduledDefrag                          N/A                    Ready
 Folder: \Microsoft\Windows\Device Information
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Device                                   4/27/2025 4:32:34 AM   Ready          
+Device                                   27/04/2025 4:20:40 am  Ready          
 Device User                              N/A                    Ready          
 
 Folder: \Microsoft\Windows\Diagnosis
@@ -1240,7 +247,7 @@ UsageDataReporting                       N/A                    Ready
 Folder: \Microsoft\Windows\Flighting\OneSettings
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-RefreshCache                             4/26/2025 8:41:26 PM   Ready          
+RefreshCache                             26/04/2025 6:25:40 pm  Ready          
 
 Folder: \Microsoft\Windows\Input
 TaskName                                 Next Run Time          Status         
@@ -1253,7 +260,7 @@ TouchpadSyncDataAvailable                N/A                    Ready
 Folder: \Microsoft\Windows\InstallService
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-ScanForUpdates                           4/28/2025 2:10:28 AM   Ready          
+ScanForUpdates                           27/04/2025 4:34:36 pm  Ready          
 ScanForUpdatesAsUser                     N/A                    Ready          
 WakeUpAndContinueUpdates                 N/A                    Disabled       
 WakeUpAndScanForUpdates                  N/A                    Disabled       
@@ -1308,7 +315,7 @@ Folder: \Microsoft\Windows\Maps
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 MapsToastTask                            N/A                    Ready          
-MapsUpdateTask                           4/27/2025 1:49:43 AM   Ready          
+MapsUpdateTask                           27/04/2025 1:31:55 am  Ready          
 
 Folder: \Microsoft\Windows\MemoryDiagnostic
 TaskName                                 Next Run Time          Status         
@@ -1368,7 +375,7 @@ Folder: \Microsoft\Windows\Printing
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 EduPrintProv                             N/A                    Ready          
-PrinterCleanupTask                       5/4/2025 12:00:00 PM   Ready          
+PrinterCleanupTask                       04/05/2025 12:00:00 pm Ready          
 
 Folder: \Microsoft\Windows\RecoveryEnvironment
 TaskName                                 Next Run Time          Status         
@@ -1389,7 +396,7 @@ Folder: \Microsoft\Windows\SettingSync
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
 BackgroundUploadTask                     N/A                    Ready          
-NetworkStateChangeTask                   N/A                    Running        
+NetworkStateChangeTask                   N/A                    Ready          
 
 Folder: \Microsoft\Windows\SharedPC
 TaskName                                 Next Run Time          Status         
@@ -1415,11 +422,6 @@ TaskName                                 Next Run Time          Status
 ======================================== ====================== ===============
 SpaceAgentTask                           N/A                    Ready          
 SpaceManagerTask                         N/A                    Ready          
-
-Folder: \Microsoft\Windows\Speech
-TaskName                                 Next Run Time          Status         
-======================================== ====================== ===============
-HeadsetButtonPress                       N/A                    Ready          
 
 Folder: \Microsoft\Windows\StateRepository
 TaskName                                 Next Run Time          Status         
@@ -1508,7 +510,7 @@ Windows Defender Verification            N/A                    Ready
 Folder: \Microsoft\Windows\Windows Error Reporting
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-QueueReporting                           4/26/2025 5:06:12 PM   Ready          
+QueueReporting                           26/04/2025 5:00:09 pm  Ready          
 
 Folder: \Microsoft\Windows\Windows Filtering Platform
 TaskName                                 Next Run Time          Status         
@@ -1528,7 +530,7 @@ Calibration Loader                       N/A                    Ready
 Folder: \Microsoft\Windows\WindowsUpdate
 TaskName                                 Next Run Time          Status         
 ======================================== ====================== ===============
-Scheduled Start                          4/26/2025 2:57:10 PM   Ready          
+Scheduled Start                          26/04/2025 11:08:34 pm Ready          
 
 Folder: \Microsoft\Windows\Wininet
 TaskName                                 Next Run Time          Status         

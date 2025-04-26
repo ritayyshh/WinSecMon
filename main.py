@@ -29,11 +29,11 @@ def main():
     parser.add_argument('--system', action='store_true', help='Perform system information audit')
     parser.add_argument('--firewall', action='store_true', help='Perform firewall audit')
     parser.add_argument('--antivirus', action='store_true', help='Perform antivirus audit')
-    parser.add_argument('--Patch', action='store_true', help='Perform patch management audit')
-    parser.add_argument('--Startup', action='store_true', help='Perform Startup Review audit')
+    parser.add_argument('--patch', action='store_true', help='Perform patch management audit')
+    parser.add_argument('--startup', action='store_true', help='Perform Startup Review audit')
     parser.add_argument('--service', action='store_true', help='Perform service audit')
-    parser.add_argument('--Applications', action='store_true', help='Perform Applications audit')
-    parser.add_argument('--Schedule', action='store_true', help='Perform Schedule Task audit')
+    parser.add_argument('--applications', action='store_true', help='Perform Applications audit')
+    parser.add_argument('--schedule', action='store_true', help='Perform Schedule Task audit')
     
     
     args = parser.parse_args()
@@ -49,15 +49,15 @@ def main():
             firewall.check_firewall_status()
         if args.antivirus:
             antivirus.check_antivirus()
-        if args.Patch:
+        if args.patch:
             Patch.check_patch_status()
-        if args.Startup:
+        if args.startup:
             Startup.check_startup_apps()
         if args.service:
             service.audit_services()
-        if args.Applications:
+        if args.applications:
             Applications.list_installed_apps()
-        if args.Schedule:
+        if args.schedule:
             Schedule.check_scheduled_tasks()    
     
     print("Windows Audit Completed.")
