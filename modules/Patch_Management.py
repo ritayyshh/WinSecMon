@@ -8,4 +8,3 @@ def check_patch_status():
         logging.info(result.stdout)
     except Exception as e:
         logging.error(f"Failed to check patch status: {e}")
-

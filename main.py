@@ -2,25 +2,31 @@ import argparse
 import modules.system_info as sys_info
 import modules.firewall_check as firewall
 import modules.antivirus_check as antivirus
-import modules.Patch_Management as Patch
-import modules.Startup_Review as Startup
-import modules.Service as service
-import modules.Installed_Applications as Applications
-import modules.Scheduled_Task as Schedule
+import modules.patch_management as patch
+import modules.startup_review as startup
+import modules.services as service
+import modules.installed_applications as applications
+import modules.scheduled_task as schedule
+import modules.user_accounts as accounts
+import modules.remote_access as remote
 from modules.logging import setup_logging, clear_logs
+from modules.report_generator import generate_pdf_report
+import sys
 
 def perform_all_audits():
     """Perform all available audits"""
     sys_info.get_system_info()
     firewall.check_firewall_status()
     antivirus.check_antivirus()
-    Patch.check_patch_status()
-    Startup.check_startup_apps()
+    patch.check_patch_status()
+    startup.check_startup_apps()
     service.audit_services()
-    Applications.list_installed_apps()
-    Schedule.check_scheduled_tasks()
+    applications.list_installed_apps()
+    schedule.check_scheduled_tasks()
+    accounts.audit_user_accounts()
+    remote.audit_remote_access()
 
-def main():
+def run_audit():
     setup_logging()
     
     parser = argparse.ArgumentParser(description='Windows Security Audit Tool')
@@ -34,6 +40,8 @@ def main():
     parser.add_argument('--service', action='store_true', help='Perform service audit')
     parser.add_argument('--applications', action='store_true', help='Perform Applications audit')
     parser.add_argument('--schedule', action='store_true', help='Perform Schedule Task audit')
+    parser.add_argument('--accounts', action='store_true', help='Perform User Accounts audit')
+    parser.add_argument('--remote', action='store_true', help='Perform Remote Access audit')
     
     
     args = parser.parse_args()
@@ -50,17 +58,24 @@ def main():
         if args.antivirus:
             antivirus.check_antivirus()
         if args.patch:
-            Patch.check_patch_status()
+            patch.check_patch_status()
         if args.startup:
-            Startup.check_startup_apps()
+            startup.check_startup_apps()
         if args.service:
             service.audit_services()
         if args.applications:
-            Applications.list_installed_apps()
+            applications.list_installed_apps()
         if args.schedule:
-            Schedule.check_scheduled_tasks()    
+            schedule.check_scheduled_tasks()
+        if args.accounts:
+            accounts.audit_user_accounts()
+        if args.remote:
+            remote.audit_remote_access()
     
     print("Windows Audit Completed.")
 
 if __name__ == "__main__":
-    main()
+    if "--report" in sys.argv:
+        generate_pdf_report()
+    else:
+        run_audit()
