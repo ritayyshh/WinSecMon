@@ -10,8 +10,6 @@ import modules.scheduled_task as schedule
 import modules.user_accounts as accounts
 import modules.remote_access as remote
 from modules.logging import setup_logging, clear_logs
-from modules.report_generator import generate_pdf_report
-import sys
 
 def perform_all_audits():
     """Perform all available audits"""
@@ -26,7 +24,7 @@ def perform_all_audits():
     accounts.audit_user_accounts()
     remote.audit_remote_access()
 
-def run_audit():
+def main():
     setup_logging()
     
     parser = argparse.ArgumentParser(description='Windows Security Audit Tool')
@@ -75,7 +73,4 @@ def run_audit():
     print("Windows Audit Completed.")
 
 if __name__ == "__main__":
-    if "--report" in sys.argv:
-        generate_pdf_report()
-    else:
-        run_audit()
+    main()
